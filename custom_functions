@@ -1,0 +1,14 @@
+# Go up an abritrary number of directories
+# Use with 'up' or 'up 5' to go up N directories
+function up {
+    if [[ "$#" < 1 ]] ; then
+        cd ..
+    else
+        CDSTR=""
+        for i in {1..$1} ; do
+            CDSTR="../$CDSTR"
+        done
+        cd $CDSTR
+    fi
+}
+

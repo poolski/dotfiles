@@ -1,0 +1,7 @@
+alias tplan="terraform plan|landscape"
+# Go up two directories
+alias ...='cd ../..'
+# Go up three directories
+alias ....='cd ../../..'
+# Go up four directories
+alias .....='cd ../../../..'
