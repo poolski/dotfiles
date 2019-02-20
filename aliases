@@ -5,3 +5,16 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 # Go up four directories
 alias .....='cd ../../../..'
+# Clean up old branches
+alias gitcleanup='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
+alias gpom='git pull origin master'
+
+# Connect to vagrant
+alias vssh='vagrant ssh'
+alias vup='vagrant up'
+
+# Quickly go to dev/gecko
+alias gd='cd ~/dev/gecko'
+
+# Push and create PR
+alias makepr='gpc && hub pull-request'
